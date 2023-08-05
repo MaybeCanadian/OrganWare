@@ -12,6 +12,13 @@ public class GameController : MonoBehaviour
     public static UpdateEvent LateUpdateTick;
     #endregion
 
+    #region Init Functions
+    private void Start()
+    {
+        MinigameManager.GetInstance();
+    }
+    #endregion
+
     #region Update Functions
     private void Update()
     {
